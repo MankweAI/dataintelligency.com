@@ -38,6 +38,13 @@ export default function PrivacyPage() {
         deliver intelligence files, and answer compliance questions. We do not sell,
         rent, or syndicate contact lists to third parties.
       </p>
+
+      <h2>4. Aggregate Website Analytics</h2>
+      <p>
+        This site uses cookieless Vercel Web Analytics solely to record aggregate page
+        views and country-level visitor metrics without storing advertising cookies or
+        tracking users across unrelated domains.
+      </p>
     </div>
   );
 }
