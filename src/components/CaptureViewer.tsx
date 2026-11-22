@@ -17,9 +17,9 @@ const TRACE_STAGES: TraceStage[] = [
     tag: "High-Intent Checkout Buyer",
     heading: "Ready-to-buy shopper pauses at checkout to search for a code",
     explanation:
-      "The customer already holds an item in their bag on Alder & Pine Supply and opens Google for a promo code. Disguised coupon aggregators dominate the top sponsored and organic slots seconds before payment.",
+      "The customer already has an item in their cart on Solvik Recovery and opens Google for a promo code. Disguised coupon aggregators dominate the top sponsored and organic slots seconds before payment.",
     image: "/captures/stage1.png",
-    alt: "Simulated Chrome search window showing CouponSip and PromoDeck sponsored promo code results above Alder & Pine Supply.",
+    alt: "Google search results showing CouponSip and PromoDeck sponsored promo code listings above Solvik Recovery.",
   },
   {
     id: "hop2",
@@ -30,7 +30,7 @@ const TRACE_STAGES: TraceStage[] = [
     explanation:
       "Inside your affiliate dashboard, this partner poses as an ordinary creator or deal reviewer. Externally, CouponSip runs paid search arbitrage across rotating bridge domains split across separate IDs so none trip velocity alerts.",
     image: "/captures/stage2.png",
-    alt: "Simulated CouponSip bridge page for Alder & Pine showing Google Ads gclid parameter and Show Coupon Code triggers.",
+    alt: "CouponSip bridge page for Solvik Recovery showing Google Ads gclid parameter and Show Coupon Code buttons.",
   },
   {
     id: "hop3",
@@ -41,7 +41,7 @@ const TRACE_STAGES: TraceStage[] = [
     explanation:
       "Clicking to reveal the code opens the pop-over modal and triggers the ShareASale relay link in the background (visible in the lower-left preview bar), stamping a fresh affiliate tracking cookie in the buyer's browser.",
     image: "/captures/stage3.png",
-    alt: "Simulated CouponSip click-to-copy modal showing code ALDER20 and the ShareASale tracking link in Chrome's bottom-left status bar.",
+    alt: "CouponSip click-to-copy modal showing code SOLVIK20 and the ShareASale tracking relay URL in Chrome's status bar.",
   },
   {
     id: "hop4",
@@ -50,9 +50,9 @@ const TRACE_STAGES: TraceStage[] = [
     tag: "Last-Click Reassignment",
     heading: "Your storefront returns stamped with affiliate payout parameters",
     explanation:
-      "Even when the revealed coupon code is rejected at checkout, the landing URL already carries utm_source=shareasale and an active click ID. Standard last-click rules pay the commission when the shopper finishes buying.",
+      "The shopper lands back on your storefront carrying utm_source=shareasale and an active click ID in the address bar. Standard last-click rules pay the commission when they complete checkout.",
     image: "/captures/stage4.png",
-    alt: "Simulated Alder & Pine Supply storefront with bag open showing rejected ALDER20 code while ShareASale UTM tags sit active in the URL bar.",
+    alt: "Solvik Recovery infrared sauna homepage carrying active ShareASale UTM and sscid parameters in the browser address bar.",
   },
 ];
 

@@ -59,13 +59,15 @@ export default function HomePage() {
             <p className="hero-kicker">Brand Protection Intelligence</p>
 
             <h1 className="hero-title">
-              Stop paying commissions on{" "}
-              <span className="hero-title-accent">traffic you already own.</span>
+              You&apos;re paying commissions to syndicates{" "}
+              <span className="hero-title-accent">
+                hijacking your own checkout.
+              </span>
             </h1>
 
             <p className="hero-subtitle">
-              Hidden coupon rings register disguised creator accounts to intercept
-              branded searches right before checkout.
+              These coupon syndicates register disguised creator accounts to
+              intercept branded searches seconds before payment.
             </p>
           </div>
         </div>
@@ -73,14 +75,13 @@ export default function HomePage() {
 
       <section id="captures" className="section section-trace">
         <div className="container">
-          <span className="section-label">Simulated Case Capture · Illustrative Brand</span>
+          <span className="section-label">Illustrative Brand Captures</span>
           <h2 className="section-title">
             How a branded search gets stamped as an affiliate sale
           </h2>
           <p className="section-lead">
-            Recreated step-by-step on a sample storefront (Alder &amp; Pine Supply) to
-            show the exact browser path, bridge pages, and injected payout parameters
-            captured during an audit without exposing private client programs.
+            Follow the complete browser sequence from a branded promo-code search to an
+            injected affiliate payout tag stamped on checkout.
           </p>
 
           <CaptureViewer />
@@ -157,7 +158,7 @@ export default function HomePage() {
             <div className="trace-stage-media">
               <img
                 src="/captures/deliverable-package.png"
-                alt="Sample cleanup file workbook (alder_pine_ring_cleanup.csv) listing 9 linked affiliate IDs paired with an executive Case Brief PDF summary."
+                alt="Cleanup file workbook (solvik_recovery_ring_cleanup.csv) listing 9 linked affiliate IDs paired with an executive Case Brief PDF summary."
               />
             </div>
           </div>
