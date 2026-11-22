@@ -1,20 +1,21 @@
 import { CaptureViewer } from "@/components/CaptureViewer";
+import { InquiryForm } from "@/components/InquiryForm";
 
 const DELIVERABLE_ITEMS = [
   {
-    num: "01 · Actionable CSV Workbook",
+    num: "01 · Day 1 — Cleanup File",
     title: "Complete Affiliate ID & Bridge Map",
-    body: "Every disguised partner ID, dashboard creator alias, external bridge domain, and shared infrastructure signal formatted for immediate bulk deactivation.",
+    body: "Delivered on Day 1: every disguised partner ID, dashboard alias, external bridge domain, and shared infrastructure signal for all flagged events—formatted for immediate deactivation.",
   },
   {
-    num: "02 · Timestamped Visual Chain",
-    title: "Unredacted Browser Captures & HAR Logs",
-    body: "Clean desktop screenshots and redirect chains proving each listed ID intercepted branded checkout traffic on your domain.",
+    num: "02 · Day 1 — Evidence & Clawback Log",
+    title: "Unredacted Captures & Reversal Logs",
+    body: "Delivered on Day 1: timestamped browser captures, redirect chains, and parameter logs (utm_campaign, sscid, irclickid) organized for commission clawbacks.",
   },
   {
-    num: "03 · Dispute & Clawback Log",
-    title: "Commission Reversal Documentation",
-    body: "Network parameter logs (utm_campaign, sscid, irclickid, click timestamps) organized for Impact, ShareASale, Awin, or Refersion reversals.",
+    num: "03 · Days 2–30 — Re-Entry Watch",
+    title: "30-Day External Re-Rotation Sweeps",
+    body: "If banned syndicates spin up replacement creator aliases or rotated bridge URLs over the following 30 days, our desk catches them externally and updates your list.",
   },
 ];
 
@@ -22,7 +23,7 @@ const FAQ_ITEMS = [
   {
     question: "Do you need access to our Impact, ShareASale, or Shopify account?",
     answer:
-      "No. Everything in our cleanup file is captured externally using browser telemetry, DNS/infrastructure clustering, and live redirect verification. You never share API keys, logins, or customer data.",
+      "No. Both the Day 1 cleanup file and the 30-day re-entry watch run 100% externally using browser telemetry, DNS clustering, and live redirect verification. You never share API keys or logins.",
   },
   {
     question: "Why didn't our affiliate manager or platform fraud filters catch this?",
@@ -32,12 +33,12 @@ const FAQ_ITEMS = [
   {
     question: "Is this a recurring SaaS subscription or monthly retainer?",
     answer:
-      "No. We price each mapped cleanup file as a flat one-off fee with zero ongoing commitment. You receive the full evidence dossier, deactivate the linked IDs in your dashboard, and keep 100% of the recovered margin.",
+      "No. The 30-Day External Cleanup & Re-Entry Watch is a flat $499 one-off fee with zero auto-renewal or ongoing retainer. You get the full Day 1 cleanup file plus 30 days of external re-entry coverage.",
   },
   {
-    question: "How do we validate findings before purchasing a cleanup file?",
+    question: "How do we validate findings before paying $499?",
     answer:
-      "Every audit opens with two concrete sample affiliate IDs and active bridge domains observed against your storefront. Your team verifies those initial IDs inside your own affiliate ledger before ordering the full fixed-fee map.",
+      "Every audit opens with two concrete sample affiliate IDs and active bridge domains observed against your storefront. Your team verifies those initial IDs inside your own affiliate ledger before starting the 30-day watch.",
   },
 ];
 
@@ -136,12 +137,16 @@ export default function HomePage() {
 
       <section id="deliverable" className="section section-deliverable">
         <div className="container">
-          <span className="section-label">Deliverable Package</span>
-          <h2 className="section-title">What is inside a DataIntelligency cleanup file</h2>
+          <span className="section-label">
+            30-Day External Cleanup &amp; Re-Entry Watch · $499 Flat
+          </span>
+          <h2 className="section-title">
+            Day 1 cleanup file—plus 30 days of re-entry protection
+          </h2>
           <p className="section-lead">
-            No extra dashboard seat or software onboarding. Every flat-fee audit delivers
-            an immediately actionable workbook and evidence folder built for Finance and
-            Affiliate Ops to execute in one pass.
+            For a single flat $499 fee (no retainer or auto-renewal), you receive the
+            complete cleanup file on Day 1 for all flagged hijacking events, backed by 30
+            days of external monitoring if the syndicate tries to rotate onto new IDs.
           </p>
 
           <div className="deliverable-split">
@@ -163,32 +168,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="verify-banner">
-            <div className="verify-banner-text">
-              <h3>Request an external program check</h3>
-              <p>
-                Share your storefront domain and affiliate network with{" "}
-                <a
-                  href="mailto:briefings@dataintelligency.com"
-                  className="verify-email-link"
-                >
-                  briefings@dataintelligency.com
-                </a>
-                . Our research desk inspects public promo-code SERPs and redirect paths
-                for disguised coupon rings—zero dashboard logins or tracking pixels
-                required.
-              </p>
-            </div>
-            <a
-              href="mailto:briefings@dataintelligency.com?subject=External%20Affiliate%20Program%20Inquiry"
-              className="btn-verify"
-            >
-              <span>Request a Program Audit</span>
-              <span aria-hidden="true" style={{ color: "#fbbf24" }}>
-                →
-              </span>
-            </a>
-          </div>
+          <InquiryForm />
         </div>
       </section>
 
