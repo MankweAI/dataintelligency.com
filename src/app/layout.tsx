@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { HumanAnalytics } from "@/components/HumanAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -58,7 +58,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <Analytics />
+        <HumanAnalytics />
       </body>
     </html>
   );
