@@ -14,13 +14,13 @@ export function Navbar() {
             Overview
           </Link>
           <Link href="/#captures" className="nav-link">
-            Case Walkthrough
+            How Clones Are Killed
           </Link>
           <Link href="/#anatomy" className="nav-link">
-            Why Rings Hide
+            Why Manual Fails
           </Link>
           <Link href="/#deliverable" className="nav-link">
-            Deliverable
+            Protection Suite
           </Link>
           <Link href="/#faq" className="nav-link">
             FAQ

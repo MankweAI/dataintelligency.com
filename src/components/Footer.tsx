@@ -13,8 +13,8 @@ export function Footer() {
               <BrandMark />
             </div>
             <p className="footer-sub">
-              External affiliate attribution &amp; coupon-ring intelligence for DTC
-              brands. New program inquiries:{" "}
+              Brand Protection Intelligence for DTC founders. Takedown briefings
+              &amp; LOA onboarding:{" "}
               <a
                 href="mailto:briefings@dataintelligency.com"
                 style={{ color: "#fbbf24" }}
@@ -26,9 +26,9 @@ export function Footer() {
           </div>
 
           <div className="footer-links">
-            <Link href="/#captures">Case Walkthrough</Link>
-            <Link href="/#anatomy">Why Rings Hide</Link>
-            <Link href="/#deliverable">Cleanup File</Link>
+            <Link href="/#captures">Takedown Walkthrough</Link>
+            <Link href="/#anatomy">Why Manual Fails</Link>
+            <Link href="/#deliverable">Protection Suite</Link>
             <Link href="/portal">Client Portal</Link>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Engagement Terms</Link>
@@ -36,8 +36,8 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {year} DataIntelligency · External Telemetry &amp; Cleanup Files</span>
-          <span>No admin access required · Fixed-fee delivery</span>
+          <span>© {year} DataIntelligency · Brand Protection Intelligence</span>
+          <span>Zero admin access required · Authorized DMCA Enforcement</span>
         </div>
       </div>
     </footer>

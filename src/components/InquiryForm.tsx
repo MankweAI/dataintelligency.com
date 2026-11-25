@@ -2,18 +2,17 @@
 
 import { FormEvent, useState } from "react";
 
-const NETWORK_OPTIONS = [
-  "ShareASale",
-  "Impact",
-  "Awin",
-  "Refersion",
-  "Other / Not sure",
+const SCOPE_OPTIONS = [
+  "Free Sample Clone Takedown",
+  "Full Clone Ring Cleanup ($499 Sprint)",
+  "Ongoing 24/7 Monitoring ($399/mo)",
+  "3P Marketplace / Impersonation Ads",
 ];
 
 export function InquiryForm() {
   const [domain, setDomain] = useState("");
   const [email, setEmail] = useState("");
-  const [network, setNetwork] = useState(NETWORK_OPTIONS[0]);
+  const [scope, setScope] = useState(SCOPE_OPTIONS[0]);
   const [error, setError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
 
@@ -23,11 +22,11 @@ export function InquiryForm() {
     const cleanEmail = email.trim();
 
     if (!cleanDomain || !cleanDomain.includes(".")) {
-      setError("Enter your storefront domain (for example, yourbrand.com).");
+      setError("Enter your official brand domain (for example, yourbrand.com).");
       return;
     }
     if (!cleanEmail || !cleanEmail.includes("@")) {
-      setError("Enter a valid work email address.");
+      setError("Enter a valid corporate email address.");
       return;
     }
 
@@ -36,23 +35,23 @@ export function InquiryForm() {
   }
 
   const mailtoSubject = encodeURIComponent(
-    `Program Check Request: ${domain.trim()}`
+    `Clone Protection & Takedown Request: ${domain.trim()}`
   );
   const mailtoBody = encodeURIComponent(
-    `Storefront domain: ${domain.trim()}\nWork email: ${email.trim()}\nAffiliate network: ${network}\n\nRequesting the $499 30-Day External Cleanup & Re-Entry Watch details.`
+    `Official Brand Domain: ${domain.trim()}\nCorporate Email: ${email.trim()}\nRequested Action: ${scope}\n\nPlease run an external clone scan / initiate a free sample takedown.`
   );
 
   return (
     <div className="verify-banner inquiry-banner">
       <div className="inquiry-copy">
         <span className="inquiry-kicker">
-          30-Day Cleanup &amp; Re-Entry Watch · $499 Flat
+          Brand Protection Intelligence · Zero Admin Access Required
         </span>
-        <h3>Request an external program check</h3>
+        <h3>Request a free sample takedown or clone scan</h3>
         <p>
-          Enter your storefront domain and work email. Our desk inspects public
-          promo-code SERPs and redirect chains for your Day 1 cleanup file—zero
-          dashboard logins required.
+          Enter your brand domain and corporate email. Our desk verifies active
+          .shop, .store, and lookalike clone storefronts targeting your catalog—or
+          executes a sample takedown once authorized.
         </p>
         <p className="inquiry-direct">
           Direct desk:{" "}
@@ -69,12 +68,12 @@ export function InquiryForm() {
         {submitted ? (
           <div className="inquiry-success" role="status">
             <div className="inquiry-success-title">
-              Submitted — {domain.trim()}
+              Logged — {domain.trim()}
             </div>
             <p className="inquiry-success-body">
-              Your request for the <strong>{network}</strong> external check is
-              logged for <strong>{email.trim()}</strong>. Need priority follow-up
-              via your inbox?
+              Your request for <strong>{scope}</strong> is ready for{" "}
+              <strong>{email.trim()}</strong>. Send direct corporate authorization
+              to open your case immediately:
             </p>
             <div className="inquiry-success-actions">
               <a
@@ -93,7 +92,7 @@ export function InquiryForm() {
                   setSubmitted(false);
                   setDomain("");
                   setEmail("");
-                  setNetwork(NETWORK_OPTIONS[0]);
+                  setScope(SCOPE_OPTIONS[0]);
                   setError(null);
                 }}
               >
@@ -106,7 +105,7 @@ export function InquiryForm() {
             <div className="inquiry-row">
               <div>
                 <label htmlFor="inquiry-domain" className="input-label">
-                  Storefront Domain
+                  Official Brand Domain
                 </label>
                 <input
                   id="inquiry-domain"
@@ -124,7 +123,7 @@ export function InquiryForm() {
 
               <div>
                 <label htmlFor="inquiry-email" className="input-label">
-                  Work Email
+                  Corporate Email
                 </label>
                 <input
                   id="inquiry-email"
@@ -135,7 +134,7 @@ export function InquiryForm() {
                     setEmail(e.target.value);
                     if (error) setError(null);
                   }}
-                  placeholder="john.doe@company.com"
+                  placeholder="founder@yourbrand.com"
                   className="text-input inquiry-input"
                 />
               </div>
@@ -143,17 +142,17 @@ export function InquiryForm() {
 
             <div className="inquiry-row inquiry-row-submit">
               <div>
-                <label htmlFor="inquiry-network" className="input-label">
-                  Affiliate Network
+                <label htmlFor="inquiry-scope" className="input-label">
+                  Enforcement Scope
                 </label>
                 <select
-                  id="inquiry-network"
-                  name="network"
-                  value={network}
-                  onChange={(e) => setNetwork(e.target.value)}
+                  id="inquiry-scope"
+                  name="scope"
+                  value={scope}
+                  onChange={(e) => setScope(e.target.value)}
                   className="text-input inquiry-input"
                 >
-                  {NETWORK_OPTIONS.map((opt) => (
+                  {SCOPE_OPTIONS.map((opt) => (
                     <option key={opt} value={opt}>
                       {opt}
                     </option>
@@ -162,7 +161,7 @@ export function InquiryForm() {
               </div>
 
               <button type="submit" className="inquiry-submit-btn">
-                <span>Request Program Check</span>
+                <span>Request Clone Scan</span>
                 <span aria-hidden="true">→</span>
               </button>
             </div>

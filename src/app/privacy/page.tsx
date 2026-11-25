@@ -11,21 +11,21 @@ export default function PrivacyPage() {
 
       <h2>1. External Intelligence Scope</h2>
       <p>
-        DataIntelligency conducts external attribution integrity research using
-        publicly accessible search results, publicly served coupon bridge domains,
-        DNS/infrastructure records, and public affiliate redirect parameters. We do
-        not collect, process, or store personal consumer payment details or end-customer
-        profiles.
+        DataIntelligency conducts external brand-protection monitoring using
+        publicly accessible search results, publicly reachable storefront URLs,
+        DNS and WHOIS infrastructure records, and publicly served product imagery.
+        We do not collect, process, or store personal consumer payment details or
+        end-customer profiles.
       </p>
 
-      <h2>2. Merchant Account Independence</h2>
+      <h2>2. Storefront Account Independence</h2>
       <p>
-        We do not request administrative logins, affiliate network credentials, or
-        private store analytics to produce our cleanup files. Client brands validate
-        our external findings inside their own affiliate ledger.
+        We do not request administrative logins, Shopify staff credentials, payment
+        processor passwords, or private store analytics to detect clone domains
+        or submit Authorized DMCA Agent enforcement notices.
       </p>
 
-      <h2>3. Business Inquiries &amp; Communications</h2>
+      <h2>3. Business Inquiries &amp; Authorization Records</h2>
       <p>
         When brand executives correspond with DataIntelligency via{" "}
         <a
@@ -34,9 +34,9 @@ export default function PrivacyPage() {
         >
           briefings@dataintelligency.com
         </a>
-        , business contact details are used strictly to evaluate audit requests,
-        deliver intelligence files, and answer compliance questions. We do not sell,
-        rent, or syndicate contact lists to third parties.
+        , corporate contact details and Letters of Authorization (LOA) are used
+        strictly to execute authorized takedowns, deliver evidence briefs, and
+        manage ongoing clone monitoring. We never sell or syndicate contact lists.
       </p>
 
       <h2>4. Aggregate Website Analytics</h2>

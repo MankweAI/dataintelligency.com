@@ -9,28 +9,28 @@ export default function TermsPage() {
       <h1>Engagement Terms</h1>
       <p className="prose-meta">Last updated: November 2026 · DataIntelligency</p>
 
-      <h2>1. Fixed-Fee 30-Day Engagement Basis</h2>
+      <h2>1. Authorized DMCA Enforcement Standing</h2>
       <p>
-        Unless explicitly agreed otherwise in writing, the DataIntelligency 30-Day
-        External Cleanup &amp; Re-Entry Watch is delivered for a flat one-time fee
-        ($499), including Day 1 delivery of the cleanup file for all flagged events plus
-        30 calendar days of external re-entry monitoring. Purchasing this engagement
-        creates no recurring subscription, automatic renewal, or ongoing retainer
-        obligation.
+        Under 17 U.S.C. § 512(c)(3)(A), enforcement notices against unauthorized
+        storefronts are filed solely upon written confirmation or Letter of
+        Authorization (LOA) issued from the rights-holding brand&apos;s verified
+        corporate email address.
       </p>
 
-      <h2>2. Verification Prior to Purchase</h2>
+      <h2>2. Sample Takedowns, Cleanup Sprints &amp; 24/7 Monitoring</h2>
       <p>
-        Every proactive outreach engagement provides two initial sample affiliate IDs
-        and associated bridge URLs for independent confirmation inside your own
-        affiliate dashboard before any payment is requested.
+        Eligible brands may authorize an initial sample takedown at no fee to
+        verify execution before engaging a fixed-fee Cleanup Sprint ($499) or
+        ongoing 24/7 clone respawn monitoring ($399/mo, cancelable anytime with no
+        long-term lock-in).
       </p>
 
       <h2>3. Confidential Client Use</h2>
       <p>
-        Delivered evidence packs—including screenshot chains, timestamps, parameter
-        logs, and affiliate ID mappings—are licensed for internal brand protection,
-        compliance enforcement, and commission reconciliation by the purchasing merchant.
+        Delivered evidence packs—including screenshot captures, timestamps,
+        registrar/hosting ticket references, and HTTP 404 / NXDOMAIN verification
+        logs—are licensed for internal brand protection, compliance, and chargeback
+        defense by the purchasing brand.
       </p>
     </div>
   );

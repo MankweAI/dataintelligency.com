@@ -22,7 +22,7 @@ export default function PortalPage() {
     }
 
     setError(
-      "Credentials not recognized. For access provisioning, contact briefings@dataintelligency.com."
+      "Credentials not recognized. For LOA activation or workspace access, contact briefings@dataintelligency.com."
     );
   }
 
@@ -38,11 +38,11 @@ export default function PortalPage() {
               Client Portal
             </span>
             <h1 className="portal-headline">
-              Program Governance &amp; Remediation Workspace
+              Clone Takedown &amp; 24/7 Protection Workspace
             </h1>
             <p className="portal-intro">
-              Direct access to active cleanup files, evidence captures, and commission
-              reversal logs.
+              Direct access to active clone domain dossiers, DMCA filing
+              tickets, HTTP 404 offline proofs, and 24/7 respawn alerts.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export default function PortalPage() {
                     setEmail(e.target.value);
                     if (error) setError(null);
                   }}
-                  placeholder="john.doe@company.com"
+                  placeholder="founder@yourbrand.com"
                   autoComplete="email"
                   className="text-input"
                 />

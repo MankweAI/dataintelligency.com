@@ -3,42 +3,42 @@ import { InquiryForm } from "@/components/InquiryForm";
 
 const DELIVERABLE_ITEMS = [
   {
-    num: "01 · Day 1 — Cleanup File",
-    title: "Complete Affiliate ID & Bridge Map",
-    body: "Delivered on Day 1: every disguised partner ID, dashboard alias, external bridge domain, and shared infrastructure signal for all flagged events—formatted for immediate deactivation.",
+    num: "01 · Free Sample Proof",
+    title: "Verify Enforcement Before Spending a Dollar",
+    body: "Start with a free sample takedown on an active clone domain targeting your brand, or request a baseline scan showing the unauthorized storefronts running your product photos right now.",
   },
   {
-    num: "02 · Day 1 — Evidence & Clawback Log",
-    title: "Unredacted Captures & Reversal Logs",
-    body: "Delivered on Day 1: timestamped browser captures, redirect chains, and parameter logs (utm_campaign, sscid, irclickid) organized for commission clawbacks.",
+    num: "02 · Sprint Takedown ($499 Flat)",
+    title: "Done-For-You Multi-Layer Clone Removal",
+    body: "We act as your Authorized DMCA Agent under 17 U.S.C. § 512(c)(3)(A) to file copyright, impersonation, and registrar abuse notices across hosts, DNS registrars, search indexes, and payment gateways.",
   },
   {
-    num: "03 · Days 2–30 — Re-Entry Watch",
-    title: "30-Day External Re-Rotation Sweeps",
-    body: "If banned syndicates spin up replacement creator aliases or rotated bridge URLs over the following 30 days, our desk catches them externally and updates your list.",
+    num: "03 · Ongoing Shield ($399/mo Optional)",
+    title: "24/7 Respawn Monitoring & Automatic Takedowns",
+    body: "Clone rings come back wherever stealing your ads is profitable. Continuous 24/7 sweeps catch newly registered .shop, .store, and lookalike checkouts so your team never plays whack-a-mole.",
   },
 ];
 
 const FAQ_ITEMS = [
   {
-    question: "Do you need access to our Impact, ShareASale, or Shopify account?",
+    question: "Do you need access to our Shopify admin, Stripe, or ad accounts?",
     answer:
-      "No. Both the Day 1 cleanup file and the 30-day re-entry watch run 100% externally using browser telemetry, DNS clustering, and live redirect verification. You never share API keys or logins.",
+      "No. Detection, evidence capture, and DMCA/impersonation enforcement run 100% externally. You never share store logins, API keys, or customer data.",
   },
   {
-    question: "Why didn't our affiliate manager or platform fraud filters catch this?",
+    question: "How can you file takedowns without us hiring an IP law firm?",
     answer:
-      "Platform filters look for extreme spikes on a single publisher ID. Disguised rings split checkout traffic across 5 to 15 separate accounts disguised as creators or editorial blogs so each account stays below alert thresholds.",
+      "Under U.S. copyright law (17 U.S.C. § 512(c)(3)(A)), takedown notices may be executed by an authorized enforcement agent acting on behalf of the copyright owner. Confirming authorization from your corporate domain email empowers us to file directly—and your brand owns automatic copyright on its original product photography.",
   },
   {
-    question: "Is this a recurring SaaS subscription or monthly retainer?",
+    question: "Why didn't our previous manual DMCA takedown stop them?",
     answer:
-      "No. The 30-Day External Cleanup & Re-Entry Watch is a flat $499 one-off fee with zero auto-renewal or ongoing retainer. You get the full Day 1 cleanup file plus 30 days of external re-entry coverage.",
+      "Manual one-off notices usually hit a single URL while leaving the operator's sister domains, upstream product feeds, and payment descriptors untouched. Where clones remain profitable, operators simply spin up a new .shop or .store domain days later unless monitored continuously.",
   },
   {
-    question: "How do we validate findings before paying $499?",
+    question: "Can we test your team on one clone store first?",
     answer:
-      "Every audit opens with two concrete sample affiliate IDs and active bridge domains observed against your storefront. Your team verifies those initial IDs inside your own affiliate ledger before starting the 30-day watch.",
+      "Yes. Request a sample takedown check below or reply directly to our briefing email with confirmation from your corporate domain—we will execute an initial sample takedown to prove execution speed before any $499 sprint engagement.",
   },
 ];
 
@@ -60,15 +60,16 @@ export default function HomePage() {
             <p className="hero-kicker">Brand Protection Intelligence</p>
 
             <h1 className="hero-title">
-              You&apos;re paying commissions to syndicates{" "}
+              Unauthorized storefronts are{" "}
               <span className="hero-title-accent">
-                hijacking your own checkout.
+                cloning your products.
               </span>
             </h1>
 
             <p className="hero-subtitle">
-              These coupon syndicates register disguised creator accounts to
-              intercept branded searches seconds before payment.
+              We take down lookalike clone domains across hosts, registrars, and
+              search—and monitor your catalog 24/7 to shut down new clones as
+              they appear.
             </p>
           </div>
         </div>
@@ -76,13 +77,13 @@ export default function HomePage() {
 
       <section id="captures" className="section section-trace">
         <div className="container">
-          <span className="section-label">Illustrative Brand Captures</span>
+          <span className="section-label">Illustrative Takedown Sequence</span>
           <h2 className="section-title">
-            How a branded search gets stamped as an affiliate sale
+            How unauthorized clone storefronts are detected and shut down
           </h2>
           <p className="section-lead">
-            Follow the complete browser sequence from a branded promo-code search to an
-            injected affiliate payout tag stamped on checkout.
+            Follow the complete external workflow from stolen-photo fingerprint
+            matching to multi-layer enforcement and 24/7 respawn monitoring.
           </p>
 
           <CaptureViewer />
@@ -91,44 +92,44 @@ export default function HomePage() {
 
       <section id="anatomy" className="section section-editorial">
         <div className="container">
-          <span className="section-label">Methodology · How Rings Hide</span>
+          <span className="section-label">Methodology · Why Clones Return</span>
           <h2 className="section-title">
-            Why split coupon rings pass routine affiliate program checks
+            Why manual takedowns hardly deter profitable clone rings
           </h2>
           <p className="section-lead">
-            Modern coupon hijackers rarely rely on one loud publisher account or overt
-            trademark bidding on brand URLs. They distribute traffic across lookalike
-            accounts built to blend into standard DTC affiliate programs.
+            Submitting an isolated form against one storefront treats the symptom,
+            not the operation. Here is why copycat rings survive one-off cleanups—and
+            how structured enforcement shuts them down.
           </p>
 
           <div className="editorial-cols">
             <article className="editorial-col">
-              <div className="editorial-step">01 · Fragmentation</div>
-              <h3 className="editorial-title">Split-ID Account Clustering</h3>
+              <div className="editorial-step">01 · Visual Theft</div>
+              <h3 className="editorial-title">Stolen Studio Photography</h3>
               <p className="editorial-body">
-                Operators register 5 to 15 seemingly unrelated affiliate accounts under
-                creator aliases or review personas. By capping volume per ID, none trigger
-                automated velocity or reversal thresholds on their own.
+                Operators mirror your product pages on cheap .shop, .store, and
+                typosquat domains, running 70%-off ads to intercept buyers warmed
+                up by your own paid social and search campaigns.
               </p>
             </article>
 
             <article className="editorial-col">
-              <div className="editorial-step">02 · Cloaked Infrastructure</div>
-              <h3 className="editorial-title">Rotating Bridge Domains</h3>
+              <div className="editorial-step">02 · Rapid Respawns</div>
+              <h3 className="editorial-title">Whack-a-Mole Domain Rotation</h3>
               <p className="editorial-body">
-                Each ID routes through throwaway promo-code domains bidding or ranking on
-                &ldquo;[brand] coupon code&rdquo; queries. Clicking to reveal or copy a
-                code silently triggers the outbound affiliate redirect hop.
+                When one storefront is reported manually, syndicates deploy a
+                pre-built replacement domain using your same CDN photography within
+                days—pushing scammed customers back into your support inbox.
               </p>
             </article>
 
             <article className="editorial-col">
-              <div className="editorial-step">03 · Attribution Theft</div>
-              <h3 className="editorial-title">Last-Click Checkout Overwrite</h3>
+              <div className="editorial-step">03 · Full-Stack Enforcement</div>
+              <h3 className="editorial-title">Coordinated Takedown &amp; Watch</h3>
               <p className="editorial-body">
-                Buyers already in checkout return with a freshly stamped affiliate cookie
-                or query string. Your brand pays commission on customers already earned
-                through paid acquisition, email, or direct loyalty.
+                Under 17 U.S.C. § 512(c)(3)(A), we hit storefront hosts, DNS
+                registrars, search indexes, and payment processors together—then
+                watch 24/7 to kill respawns automatically.
               </p>
             </article>
           </div>
@@ -138,15 +139,15 @@ export default function HomePage() {
       <section id="deliverable" className="section section-deliverable">
         <div className="container">
           <span className="section-label">
-            30-Day External Cleanup &amp; Re-Entry Watch · $499 Flat
+            Done-For-You Takedown Sprint &amp; 24/7 Monitoring
           </span>
           <h2 className="section-title">
-            Day 1 cleanup file—plus 30 days of re-entry protection
+            Start with a free sample takedown—scale only when proven
           </h2>
           <p className="section-lead">
-            For a single flat $499 fee (no retainer or auto-renewal), you receive the
-            complete cleanup file on Day 1 for all flagged hijacking events, backed by 30
-            days of external monitoring if the syndicate tries to rotate onto new IDs.
+            Zero homework for your ops or legal team. We capture the evidence,
+            prepare and file every notice as your Authorized Enforcement Agent,
+            and deliver verified offline proof across all targets.
           </p>
 
           <div className="deliverable-split">
@@ -163,7 +164,7 @@ export default function HomePage() {
             <div className="trace-stage-media">
               <img
                 src="/captures/deliverable-package.png"
-                alt="Cleanup file workbook (solvik_recovery_ring_cleanup.csv) listing 9 linked affiliate IDs paired with an executive Case Brief PDF summary."
+                alt="Clone takedown enforcement ledger showing offline HTTP 404 / NXDOMAIN verification alongside executive takedown brief."
               />
             </div>
           </div>
@@ -174,8 +175,8 @@ export default function HomePage() {
 
       <section id="faq" className="section section-editorial">
         <div className="container">
-          <span className="section-label">Verification FAQ</span>
-          <h2 className="section-title">Common questions from brand operators</h2>
+          <span className="section-label">Operator FAQ</span>
+          <h2 className="section-title">Common questions from brand founders</h2>
 
           <div className="faq-grid">
             {FAQ_ITEMS.map((item) => (

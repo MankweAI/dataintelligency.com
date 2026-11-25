@@ -13,57 +13,63 @@ const TRACE_STAGES: TraceStage[] = [
   {
     id: "hop1",
     num: "01",
-    time: "t+00.0s",
-    tag: "High-Intent Checkout Buyer",
-    heading: "Ready-to-buy shopper pauses at checkout to search for a code",
+    time: "Catalog Scrape",
+    tag: "Stolen Studio Photography",
+    heading: "Syndicates clone your product photos and deploy a lookalike domain",
     explanation:
-      "The customer already has an item in their cart on Solvik Recovery and opens Google for a promo code. Disguised coupon aggregators dominate the top sponsored and organic slots seconds before payment.",
+      "Using perceptual visual hashing, we match your original studio photography (here shown on illustrative brand Alder & Loom) against unauthorized .shop, .store, and lookalike checkouts even when scammers alter titles to dodge keyword alerts.",
     image: "/captures/stage1.png",
-    alt: "Google search results showing CouponSip and PromoDeck sponsored promo code listings above Solvik Recovery.",
+    alt: "Visual fingerprint comparison matching Alder & Loom official CDN photography against lookalike domain alderandloomonline.shop.",
   },
   {
     id: "hop2",
     num: "02",
-    time: "t+04.2s",
-    tag: "Disguised Bridge Property",
-    heading: "Throwaway coupon domain masks an approved affiliate ID",
+    time: "Infrastructure Audit",
+    tag: "Live Fake Checkout",
+    heading: "Every clone exposes underlying host, registrar, and payment rails",
     explanation:
-      "Inside your affiliate dashboard, this partner poses as an ordinary creator or deal reviewer. Externally, CouponSip runs paid search arbitrage across rotating bridge domains split across separate IDs so none trip velocity alerts.",
+      "Before sending a single notice, our desk maps the clone storefront's live checkout, unedited template markers, hosting platform instance, registrar abuse desk, and linked sibling domains running the same stolen catalog.",
     image: "/captures/stage2.png",
-    alt: "CouponSip bridge page for Solvik Recovery showing Google Ads gclid parameter and Show Coupon Code buttons.",
+    alt: "Live clone product page for Alder & Loom Shearling Tote marked down 70% alongside extracted Shopify ID and registrar telemetry.",
   },
   {
     id: "hop3",
     num: "03",
-    time: "t+09.8s",
-    tag: "Click-to-Copy Redirect",
-    heading: "Clicking \"Copy Code\" silently fires the outbound affiliate hop",
+    time: "Under 24 Hours",
+    tag: "Authorized DMCA Enforcement",
+    heading: "Multi-layer filings hit the storefront, registrar, search index, and gateway together",
     explanation:
-      "Clicking to reveal the code opens the pop-over modal and triggers the ShareASale relay link in the background (visible in the lower-left preview bar), stamping a fresh affiliate tracking cookie in the buyer's browser.",
+      "Acting as your Authorized Enforcement Agent under 17 U.S.C. § 512(c)(3)(A), we submit evidence-backed copyright and impersonation notices simultaneously across storefront hosts, domain registrars, Google Search/Shopping, and payment processors.",
     image: "/captures/stage3.png",
-    alt: "CouponSip click-to-copy modal showing code SOLVIK20 and the ShareASale tracking relay URL in Chrome's status bar.",
+    alt: "Enforcement console showing parallel DMCA and abuse filings submitted across Shopify, Registrar, Google Search, and Payment Processors.",
   },
   {
     id: "hop4",
     num: "04",
-    time: "t+11.1s",
-    tag: "Last-Click Reassignment",
-    heading: "Your storefront returns stamped with affiliate payout parameters",
+    time: "Continuous 24/7",
+    tag: "Termination & Respawn Watch",
+    heading: "Offline proof is verified—and new clone spawns are caught immediately",
     explanation:
-      "The shopper lands back on your storefront carrying utm_source=shareasale and an active click ID in the address bar. Standard last-click rules pay the commission when they complete checkout.",
+      "Because profitable clone rings immediately register replacement .shop or .store domains after a takedown, our 24/7 watch sweeps daily for respawns and queues follow-on enforcement before new clones capture holiday or ad-driven traffic.",
     image: "/captures/stage4.png",
-    alt: "Solvik Recovery infrared sauna homepage carrying active ShareASale UTM and sscid parameters in the browser address bar.",
+    alt: "NXDOMAIN 404 offline verification for terminated clone domain alongside live 24/7 respawn feed catching replacement spawn.",
   },
 ];
 
 export function CaptureViewer() {
+  const total = TRACE_STAGES.length;
   return (
     <div className="trace-stages">
-      {TRACE_STAGES.map((stage) => (
+      {TRACE_STAGES.map((stage, idx) => (
         <article key={stage.id} className="trace-stage-row">
           <div className="trace-stage-copy">
             <div className="trace-stage-tag">
-              Stage {stage.num} · {stage.time} · {stage.tag}
+              <span className="trace-stage-counter">
+                Stage {idx + 1}/{total}
+              </span>
+              <span className="trace-stage-sub">
+                {stage.time} · {stage.tag}
+              </span>
             </div>
             <h3 className="trace-heading">{stage.heading}</h3>
             <p className="trace-prose">{stage.explanation}</p>
